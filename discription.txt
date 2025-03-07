@@ -1,8 +1,9 @@
 // Description
 /**
 in terminal 
-install npm  i react-outer-dom for(create multiple routes)
+install npm  i react-router-dom for(create multiple routes)
 and react-toastify for(to notification)
+
 
 
  */
