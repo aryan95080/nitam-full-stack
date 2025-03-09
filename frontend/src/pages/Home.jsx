@@ -1,9 +1,13 @@
 import React from 'react'
-
+import Hero from '../components/hero'
+import LetestCollection from '../components/LetestCollection';
 function Home() {
   return (
-    <div>home</div>
+    <div>
+      <Hero/>
+      <LetestCollection/>
+    </div>
   )
 }
 
-export default Home
+export default Hero;

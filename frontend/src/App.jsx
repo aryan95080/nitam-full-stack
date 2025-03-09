@@ -14,10 +14,8 @@ import Navbar from './components/Navbar'
 function App() {
 
   return (
-    <div className='bg-purple-500 w-full h-800'>
-
+    <div className='bg-gray-300 w-full min-w-full h-800'>
       <Navbar/>
-
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
