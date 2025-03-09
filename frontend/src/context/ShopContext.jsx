@@ -1,11 +1,11 @@
 {/* Create shopContext API */}
 import { createContext } from "react";
-import {products} from "../assets/assets"
- export const ShopContext = createContext();
- const ShopContextProvider=(props)=>{
+import { products } from "../assets/assets";
+export const ShopContext = createContext();
+const ShopContextProvider=(props)=>{
   const currency='₹';
   const delivery_fee=10;
-  const val={
+  const value={
     products , delivery_fee , currency
   }
   return(
@@ -13,5 +13,5 @@ import {products} from "../assets/assets"
       {props.children}
     </ShopContext.Provider>
   )
- }
- export default ShopContextProvider;
+}
+export default ShopContextProvider;
