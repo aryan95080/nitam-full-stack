@@ -7,6 +7,9 @@ import back from './images/back.png';
 import hero1 from './images/hero1.jpg';
 import hero2 from './images/hero2.png';
 import hero3 from './images/hero3.png';
+import exchange from './images/return_exchange.png';
+import quality from './images/quality.png';
+import customer_support from './images/customer_support.png';
 
 export const assets={
   logo,
@@ -18,6 +21,10 @@ export const assets={
   hero1,
   hero2,
   hero3,
+  exchange,
+  quality,
+  customer_support,
+  // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
  
 }
@@ -118,4 +125,53 @@ export const products=[
     date: 213355855864,
     bestseller: true
   },
+  {
+    _id: "aaaag",
+    name: "Casual Analog Wrist Watch",
+    description: "Stylish analog wristwatch with a minimalist design and water resistance.",
+    price: 180,
+    image: [hero3],
+    category: "Accessories",
+    subCategory: "Watches",
+    sizes: ["One Size"],
+    date: 213355855864,
+    bestseller: true
+  },
+  {
+    _id: "aaaag",
+    name: "Casual Analog Wrist Watch",
+    description: "Stylish analog wristwatch with a minimalist design and water resistance.",
+    price: 180,
+    image: [hero3],
+    category: "Accessories",
+    subCategory: "Watches",
+    sizes: ["One Size"],
+    date: 213355855864,
+    bestseller: true
+  },
+  {
+    _id: "aaaab",
+    name: "Men's Classic Fit Polo Shirt",
+    description: "A timeless polo shirt made from breathable cotton fabric, perfect for casual outings.",
+    price: 120,
+    image: [hero3],
+    category: "Men",
+    subCategory: "Topwear",
+    sizes: ["M", "L", "XL"],
+    date: 213355855859,
+    bestseller: false
+  },
+  {
+    _id: "aaaab",
+    name: "Men's Classic Fit Polo Shirt",
+    description: "A timeless polo shirt made from breathable cotton fabric, perfect for casual outings.",
+    price: 120,
+    image: [hero3],
+    category: "Men",
+    subCategory: "Topwear",
+    sizes: ["M", "L", "XL"],
+    date: 213355855859,
+    bestseller: false
+  },
+  
 ]

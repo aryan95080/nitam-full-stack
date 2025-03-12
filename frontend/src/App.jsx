@@ -10,6 +10,7 @@ import Orders from './pages/Orders'
 import PlaceOrder from './pages/PlaceOrder'
 import Products from './pages/Products'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -28,8 +29,7 @@ function App() {
         <Route path='/login' element={<Loging />} />
         {/* Add more routes here */}
       </Routes>
-
-
+      <Footer/>
     </div>
   )
 }
