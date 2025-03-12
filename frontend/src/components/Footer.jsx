@@ -14,11 +14,13 @@ import { MdMarkEmailRead } from "react-icons/md";
 
 const Footer=()=> {
   return (
-    <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 mt-20 text-sm bg-white p-3 mx-auto' >
-      <div>
-      <img  src={assets.logo} className='w-32'/>
-      <p className='text-gray-700 text-justify w-full md:w-2/3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, eaque nesciunt pariatur magnam quasi illo animi architecto natus explicabo nulla reiciendis excepturi quisquam? Voluptatibus facilis culpa placeat maiores dolorum repellat provident expedita sunt consequatur fugit dolor, voluptatem quos id tempore aliquid sed recusandae impedit nostrum? Ut, repudiandae beatae amet architecto perspiciatis blanditiis ipsam neque dolore quis maiores assumenda enim placeat quae exercitationem ipsum totam vitae animi a adipisci at eos dolorum fugiat. Facere reprehenderit optio dolores quia temporibus placeat iste!</p>
+    <div className='flex flex-col sm:grid grid-cols-[1fr_1fr_1fr] gap-14 mt-20  text-sm bg-white pl-10 pr-10' >
+      
+      <div className='col-span-3'>
+      <img  src={assets.logo} className='w-32 inline-flex'/><span><img src={assets.logoName} className='w-80 inline-flex'/></span>
+      <p className='text-gray-700 text-justify w-full'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, eaque nesciunt pariatur magnam quasi illo animi architecto natus explicabo nulla reiciendis excepturi quisquam? Voluptatibus facilis culpa placeat maiores dolorum repellat provident expedita sunt consequatur fugit dolor, voluptatem quos id tempore aliquid sed recusandae impedit nostrum? Ut, repudiandae beatae amet architecto perspiciatis blanditiis ipsam neque dolore quis maiores assumenda enim placeat quae exercitationem ipsum totam vitae animi a adipisci at eos dolorum fugiat. Facere reprehenderit optio dolores quia temporibus placeat iste!</p>
       </div>
+
       <div>
         <p className='text-xl font-medium mb-5'>CAMPANY</p>
         <ul className='flex flex-col gap-1 text-gray-700'>
@@ -29,6 +31,7 @@ const Footer=()=> {
           <li>NitAmit Stories</li>
         </ul>
       </div>
+
       <div>
         <p className='text-xl font-medium mb-5'>GROUP COMPANIES</p>
         <ul className='flex flex-col gap-1 text-gray-700'>
@@ -38,27 +41,7 @@ const Footer=()=> {
           <li>Cleartrip</li>
         </ul>
       </div>
-      <div>
-        <p className='text-xl font-medium mb-5'>HELP</p>
-        <ul className='flex flex-col gap-1 text-gray-700'>
-          <li>Payments</li>
-          <li>Shipping</li>
-          <li>Cancellation &</li>
-          <li>return</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
-      <div>
-        <p className='text-xl font-medium mb-5'>CONSUMER POLICY</p>
-        <ul className='flex flex-col gap-1 text-gray-700'>
-          <li>Cancellation &</li>
-          <li>Return</li>
-          <li>Terms of Use</li>
-          <li>Security</li>
-          <li>Privacy</li>
-          <li>Sitemap</li>
-        </ul>
-      </div>
+
       <div>
       <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
         <ul className='flex flex-col gap-1 text-gray-700'>
@@ -75,7 +58,34 @@ const Footer=()=> {
 
       </div>
       
-    </div>
+      <div>
+        <p className='text-xl font-medium mb-5'>CONSUMER POLICY</p>
+        <ul className='flex flex-col gap-1 text-gray-700'>
+          <li>Cancellation &</li>
+          <li>Return</li>
+          <li>Terms of Use</li>
+          <li>Security</li>
+          <li>Privacy</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+
+      <div>
+        <p className='text-xl font-medium mb-5'>HELP</p>
+        <ul className='flex flex-col gap-1 text-gray-700'>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Cancellation &</li>
+          <li>return</li>
+          <li>FAQ</li>
+        </ul>
+      </div> 
+      <div  className='col-span-3'>
+        <hr/>
+        <p className='text-center'>Copyright 2025@ nitamit.com-All Right Reserved.</p>
+      </div>     
+    </div>  
+    
   )
 }
 

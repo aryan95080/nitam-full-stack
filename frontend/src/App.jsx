@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='bg-gray-300 w-full min-w-full h-800'>
+    <div className='bg-gray-200 w-full min-w-full'>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home />} />

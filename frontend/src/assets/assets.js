@@ -10,6 +10,7 @@ import hero3 from './images/hero3.png';
 import exchange from './images/return_exchange.png';
 import quality from './images/quality.png';
 import customer_support from './images/customer_support.png';
+import logoName from './images/logoName.png';
 
 export const assets={
   logo,
@@ -24,6 +25,8 @@ export const assets={
   exchange,
   quality,
   customer_support,
+  logoName,
+  // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
  
