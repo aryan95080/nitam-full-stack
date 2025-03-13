@@ -5,7 +5,7 @@ import { useState } from 'react'
 function Navbar() {
   const [visible,setVisible]=useState(false);
   return (
-    <div className='flex items-center justify-between py-1 px-5 text-black rounded w-[95%]  mx-auto hover:bg-green-400 bg-green-300  font-medium sticky top-0'>
+    <div className='z-10 flex items-center justify-between py-1 px-5 text-black rounded w-[95%]  mx-auto hover:bg-green-400 bg-green-300  font-medium sticky top-0'>
     <Link to="/"><img className='w-10 cursor-pointer' src={assets.logo} alt="" /> </Link>
     <ul className=' sm:flex hidden rounded items-center gap-5 '>
       <NavLink className='hover:text-green-500 hover:bg-white hover:border px-2 py-1 rounded items-center gap-1 flex flex-col' to='/'><p>HOME</p><hr className='hidden w-2/4 border-none h-[1.5px] bg-white' /></NavLink>
