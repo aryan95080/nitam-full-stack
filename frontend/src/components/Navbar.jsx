@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useState } from 'react'
+import { ShopContext } from '../context/ShopContext';
+import { IoSearchSharp } from "react-icons/io5";
+
 function Navbar() {
   const [visible,setVisible]=useState(false);
+  const {setShowSearch}=useContext(ShopContext);
   return (
     <div className='z-10 flex items-center justify-between py-1 px-5 text-black rounded w-[95%]  mx-auto hover:bg-green-400 bg-green-300  font-medium sticky top-0'>
     <Link to="/"><img className='w-10 cursor-pointer' src={assets.logo} alt="" /> </Link>
@@ -15,8 +19,8 @@ function Navbar() {
       
     </ul>
     <div className='flex items-center gap-6'>
-    <img className='w-5 hover:text-green-500 hover:bg-white rounded-full p-1 cursor-pointer min-w-5' src={assets.searchIcon} alt="" />
-      <div className='group relative'>
+      <IoSearchSharp values='search' onClick={()=>setShowSearch(true)} />
+        <div className='group relative'>
         <img className=' hover:text-green-500 hover:bg-white hover:border w-5 rounded-full cursor-pointer min-w-5' src={assets.profile} alt="" />
         <div className='group-hover:block hidden absolute  bg-green-500 text-white r-0 p-2 mr-5 mt-4 rounded'>
           <div>

@@ -11,12 +11,14 @@ import PlaceOrder from './pages/PlaceOrder'
 import Products from './pages/Products'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
 
 function App() {
 
   return (
     <div className='bg-gray-200 w-full min-w-full'>
       <Navbar/>
+      <SearchBar/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
