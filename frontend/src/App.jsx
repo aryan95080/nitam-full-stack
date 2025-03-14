@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import Loging from './pages/Loging'
 import Orders from './pages/Orders'
 import PlaceOrder from './pages/PlaceOrder'
-import Products from './pages/Products'
+import Product from './pages/Product';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
@@ -26,8 +26,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/collection' element={<Collection />} />
         <Route path='/place-order' element={<PlaceOrder />} />
-        <Route path='/order/:id' element={<Orders />} />
-        <Route path='/products' element={<Products />} />
+        <Route path='/order' element={<Orders />} />
+        <Route path='/product/:productId' element={<Product/>} />
         <Route path='/login' element={<Loging />} />
         {/* Add more routes here */}
       </Routes>
