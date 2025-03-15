@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import { IoStar } from "react-icons/io5";
 import { FaRupeeSign } from "react-icons/fa";
+import RelatedProducts from '../components/RelatedProducts';
 
 
 
@@ -94,6 +95,8 @@ useEffect(()=>{
 
         </div>
       </div>
+      {/* -------------Related Products Section-------------*/}
+      <RelatedProducts category={productData.category} subCategory={productData.subCategory}/>
 
 
     </div>
