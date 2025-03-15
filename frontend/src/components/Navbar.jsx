@@ -7,7 +7,7 @@ import { IoSearchSharp } from "react-icons/io5";
 
 function Navbar() {
   const [visible,setVisible]=useState(false);
-  const {setShowSearch}=useContext(ShopContext);
+  const {setShowSearch,getCartCount}=useContext(ShopContext);
   return (
     <div className='z-10 flex items-center justify-between py-1 px-5 text-black rounded w-[95%]  mx-auto hover:bg-green-400 bg-green-300  font-medium sticky top-0'>
     <Link to="/"><img className='w-10 cursor-pointer' src={assets.logo} alt="" /> </Link>
@@ -32,7 +32,7 @@ function Navbar() {
       </div>
       <Link to='/cart' className='relative'>
       <img className='w-5 min-w-5 cursor-pointer' src={assets.cart} alt="" />
-      <p className='absolute  bg-red-400 right-[-5px] bottom-[-5px] w-4 text-center rounded-full leading-4 text-[8px] '>18</p>
+      <p className='absolute  bg-red-400 right-[-5px] bottom-[-5px] w-4 text-center rounded-full leading-4 text-[8px] '>{getCartCount()}</p>
       </Link>
       <img onClick={()=>setVisible(true)} src={assets.menu} className='w-5 sm:hidden cursor-pointer' alt="" />
     </div>

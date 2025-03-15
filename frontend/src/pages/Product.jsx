@@ -9,7 +9,7 @@ import RelatedProducts from '../components/RelatedProducts';
 
 const Product=()=> {
 const {productId}=useParams();
-const {products}=useContext(ShopContext);
+const {products,addToCart }=useContext(ShopContext);
 const [productData,setProductData]=useState(false);
 const [image,setImage]=useState('');
 // console.log(productId);
@@ -21,7 +21,7 @@ const fetchProductData=async()=>{
       setProductData(item); 
       // console.log(item);
       setImage(item.image[0]);
-      console.log(item);
+      // console.log(item);
       return null;
     }
   })
@@ -74,7 +74,7 @@ useEffect(()=>{
               }
             </div>
           </div>
-          <button className='bg-green-400 text-white rounded px-8 py-3 text-sm  active:bg-black'>Add Cart</button>
+          <button onClick={()=>addToCart(productData._id,size)} className='bg-green-400 text-white rounded px-8 py-3 text-sm  active:bg-black'>Add Cart</button>
           <hr className='mt-8 sm:w-4/5' />
           <div className='text-sm text-gray-400 mt-5 flex flex-col gap-1'>
             <p>100% Original products.</p>

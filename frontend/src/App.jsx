@@ -12,11 +12,14 @@ import Product from './pages/Product';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function App() {
 
   return (
     <div className='bg-gray-200 w-full min-w-full'>
+      <ToastContainer className='mr-[2%]'/>
       <Navbar/>
       <SearchBar/>
       <Routes>
