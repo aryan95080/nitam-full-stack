@@ -21,8 +21,10 @@ function Navbar() {
     <div className='flex items-center gap-6'>
       <IoSearchSharp values='search' onClick={()=>setShowSearch(true)} />
         <div className='group relative'>
+        <Link to='/login'>
         <img className=' hover:text-green-500 hover:bg-white hover:border w-5 rounded-full cursor-pointer min-w-5' src={assets.profile} alt="" />
-        <div className='group-hover:block hidden absolute  bg-green-500 text-white r-0 p-2 mr-5 mt-4 rounded'>
+        </Link>
+        <div className='group-hover:block hidden absolute  bg-green-500 text-white r-0 p-2 mr-1 mt-4 rounded'>
           <div>
             <p className='cursor-pointer hover-text-green'>My Profile</p>
             <p className='cursor-pointer hover-text-green'>Order</p>

@@ -2,6 +2,9 @@
 import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/assets";
 import { toast } from "react-toastify";
+import {useNavigate} from "react-router-dom"
+
+
 export const ShopContext = createContext();
 const ShopContextProvider=(props)=>{
   const currency='₹';
@@ -9,6 +12,7 @@ const ShopContextProvider=(props)=>{
   const [search,setSearch]=useState('');
   const [showSearch,setShowSearch]=useState(false);
   const [cartItems,setCartItems]=useState({});
+  const navigate=useNavigate();
 
   const addToCart=async(itemId,size)=>{
     {/*The structuredClone() method is a powerful and efficient way to deep clone JavaScript objects, including nested structures like arrays, objects, and Maps/Sets. It's a native JavaScript method designed to simplify deep copying. */}
@@ -74,7 +78,7 @@ const ShopContextProvider=(props)=>{
   }
 
   const value={
-    products , delivery_fee , currency,search,setSearch,showSearch,setShowSearch,cartItems,addToCart,getCartCount,updateQuantity,getCartAmount,
+    products , delivery_fee , currency,search,setSearch,showSearch,setShowSearch,cartItems,addToCart,getCartCount,updateQuantity,getCartAmount,navigate
   }
   return(
     <ShopContext.Provider value={value}>

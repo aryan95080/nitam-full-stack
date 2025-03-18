@@ -11,6 +11,8 @@ import exchange from './images/return_exchange.png';
 import quality from './images/quality.png';
 import customer_support from './images/customer_support.png';
 import logoName from './images/logoName.png';
+import razorPay from './images/razorpayLogo.png';
+import upiLogo from './images/upi.png';
 
 export const assets={
   logo,
@@ -26,6 +28,10 @@ export const assets={
   quality,
   customer_support,
   logoName,
+  razorPay,
+  upiLogo,
+  // add more assets here as needed. For example, product images, etc.
+  // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
   // add more assets here as needed. For example, product images, etc.
