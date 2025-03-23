@@ -1,28 +1,26 @@
 import express from 'express'
-import cors from 'cors'
+import  cors from 'cors'
 import 'dotenv/config'
-import connectDB from './config/mongodb.js'
+import connectDB from './config/mongodb.js';
+import connectCloudinary from './config/cloudinary.js';
 
+//app canfig
 
-
-//app configuration
-const app = express();
-const port = process.env.PORT || 4000
-
-//db connection
-connectDB()
-
+const app=express();
+const port=process.env.PORT || 4000
+connectDB();
+connectCloudinary()
 
 //middleware
+app.use(express.json())
+app.use(cors())
 
-app.use(express.json());
-app.use(cors());
+//appi endpoints
 
-//api endpoint
-
-app.get('/', (req, res) => {
-  res.send('API Working')
+app.get('/',(req,res)=>{
+  res.send("API WORKING")
 })
 
-//listen to the server
-app.listen(port,()=>console.log('API server listening on port :'+port));
+//start to express server
+
+app.listen(port,()=>console.log('Server listening on port '+port))
