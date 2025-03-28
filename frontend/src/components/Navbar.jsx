@@ -7,7 +7,15 @@ import { IoSearchSharp } from "react-icons/io5";
 
 function Navbar() {
   const [visible,setVisible]=useState(false);
-  const {setShowSearch,getCartCount}=useContext(ShopContext);
+  const {setShowSearch,getCartCount,navigate,token,setToken,setCartItems}=useContext(ShopContext);
+  
+  const logout=()=>{
+    navigate('/login')
+    localStorage.removeItem('token')
+    setToken('')
+    setCartItems({})
+    
+  }
   return (
     <div className='z-10 flex items-center justify-between py-1 px-5 text-black rounded w-[95%]  mx-auto hover:bg-green-400 bg-green-300  font-medium sticky top-0'>
     <Link to="/"><img className='w-10 cursor-pointer' src={assets.logo} alt="" /> </Link>
@@ -21,16 +29,18 @@ function Navbar() {
     <div className='flex items-center gap-6'>
       <IoSearchSharp values='search' onClick={()=>setShowSearch(true)} />
         <div className='group relative'>
-        <Link to='/login'>
-        <img className=' hover:text-green-500 hover:bg-white hover:border w-5 rounded-full cursor-pointer min-w-5' src={assets.profile} alt="" />
-        </Link>
-        <div className='group-hover:block hidden absolute  bg-green-500 text-white r-0 p-2 mr-1 mt-4 rounded'>
-          <div>
+      
+        <img onClick={()=>token?null:navigate('/login')} className=' hover:text-green-500 hover:bg-white hover:border w-5 rounded-full cursor-pointer min-w-5' src={assets.profile} alt="" />
+        {/*Dropdown menu */}
+        {
+          token&&<div className='group-hover:block hidden absolute dropdown-menu bg-green-500 text-white right-0 pt-4'>
+          <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-200 text-black'>
             <p className='cursor-pointer hover-text-green'>My Profile</p>
-            <p className='cursor-pointer hover-text-green'>Order</p>
-            <p className='cursor-pointer hover-text-green'>Logout</p>
+            <p onClick={()=>navigate('/orders')} className='cursor-pointer hover-text-green'>Order</p>
+            <p onClick={logout} className='cursor-pointer hover-text-green'>Logout</p>
           </div>
         </div>
+        }
       </div>
       <Link to='/cart' className='relative'>
       <img className='w-5 min-w-5 cursor-pointer' src={assets.cart} alt="" />
