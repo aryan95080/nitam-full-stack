@@ -19,8 +19,9 @@ const PlaceOrder=()=>{
     state:'',
     zipcode:'',
     country:'',
-    phone:'',
+    phone:''
   })
+
   const onChangeHandler=(event)=>{
     const name=event.target.name
     const value=event.target.value
@@ -54,14 +55,13 @@ const PlaceOrder=()=>{
       //api calls for cod
       case 'cod':
         const response=await axios.post(backendUrl+'/api/order/place',orderData,{headers:{token}})
-        console.log(response.data.success)
+        // console.log(response.data.success)
         if(response.data.success){
           setCartItems({})
           navigate('/orders')
         }
         else{
           toast.error(response.data.message)
-
         }
         break;
       default:
