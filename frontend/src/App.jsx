@@ -18,7 +18,7 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
 
   return (
-    <div className='bg-gray-200 w-full min-w-full'>
+    <div className='#ffffff w-full min-w-full'>
       <ToastContainer className='mr-[2%]'/>
       <Navbar/>
       <SearchBar/>

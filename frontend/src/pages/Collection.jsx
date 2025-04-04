@@ -3,6 +3,7 @@ import { ShopContext } from '../context/ShopContext'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Title from '../components/Title';
 import ProductItem from '../components/ProductItem';
+import { assets } from '../assets/assets';
 
 
 const Collection=()=> {
@@ -88,7 +89,9 @@ const Collection=()=> {
      
       {/*Filter Option  */}
       <div className='min-w-60 bg-gray-300 p-2 rounded-2xl  relative'>
-        <p onClick={()=>setShowFilter(!showFilter)} className='m-3 text-xl flex items-center cursor-pointer gap-2'>Filters <RiArrowDropDownLine style={{color: 'blue', fontSize: '50px',position:'absolute', right:'10px',transform:showFilter?'rotate(0deg)':'rotate(-90deg)'}} />
+        <p onClick={()=>setShowFilter(!showFilter)} className='m-3 text-xl flex items-center cursor-pointer gap-2'>Filters 
+          <img src={assets.dropdown_icon}   className={`text-blue-500 text-[50px] absolute right-[10px] transform transition-transform duration-300 ${showFilter ? 'rotate-0' : 'rotate-[90deg]'}`}
+ alt="" />
         </p>
 
         {/*Category filter  */}

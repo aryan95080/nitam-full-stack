@@ -2,9 +2,17 @@
 @import "tailwindcss";
 a.active hr{
   display: block;
+  background-color: #3ac67b;
+
+}
+a.active p{
+  color:#10B981;
+  
 }
 *{
   font-family:Outfit;
+  /* background-color: bg- #3ac67b #262730 #0132fb #777784 */
+  
 }
 .prata-regular {
   font-family: "Prata", serif;

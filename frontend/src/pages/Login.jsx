@@ -51,7 +51,7 @@ const Login=()=>{
   },[token])
 
   return (
-    <form onSubmit={onSubmitHandler} action="" className='bg-green-300 p-5   rounded flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-800 '>
+    <form onSubmit={onSubmitHandler} action="" className='bg-transparent backdrop-blur-3xl p-5 rounded-lg flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-800 shadow-md shadow-green-500 '>
       <div className='inline-flex items-center gap-2 mb-2 mt-10'>
         <p className='prata-regular text-3xl'>{currentState}</p>
         <hr className='border-none h-[1.5px] w-8 bg-gray-800' />
