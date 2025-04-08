@@ -17,8 +17,8 @@ function Navbar() {
     
   }
   return (
-    <div className='z-1 bg-transparent shadow-lg backdrop-blur-sm flex items-center justify-between py-1 px-5 text-[#2b2b2b]  w-[95%]  mx-auto  font-medium sticky top-0  rounded-sm transition-all duration-300'>
-    <Link to="/" ><img className='w-15 bg-green-500 cursor-pointer py-2 px-2 rounded' src={assets.logo} alt=""  /> </Link>
+    <div className='z-100 bg-white shadow-lg backdrop-blur-sm flex items-center justify-between py-1 px-5 text-[#2b2b2b]  w-[95%]  mx-auto  font-medium sticky top-0  rounded-sm transition-all duration-300'>
+    <Link to="/" ><img className='w-13 cursor-pointer py-2 px-2 rounded' src={assets.logo} alt=""  /> </Link>
     <ul className=' sm:flex hidden rounded items-center gap-5 '>
       <NavLink className='hover:text-green-500  px-2 py-1 rounded items-center gap-1 flex flex-col' to='/'><p>HOME</p><hr className='hidden w-2/4 border-none h-[1.5px] bg-white' /></NavLink>
       <NavLink className='hover:text-green-500 hover:bg-white  px-2 py-1 rounded items-center gap-1 flex flex-col' to='/collection'><p>COLLECTION</p><hr className='hidden w-2/4 border-none h-[1.5px] bg-white' /></NavLink>

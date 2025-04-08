@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 function Hero() {
   return (
-    <div className='flex flex-col sm:flex-row rounded w-[95%] drop-shadow-lg m-auto mt-5'>
+    <div className='flex flex-col sm:flex-row w-[95%] m-auto mt-5 shadow-md drop-shadow-xl shadow-gray-400 rounded hover:scale-101 transition ease-in-out duration-100'>
       {/* Hero left side */}
       <div className='w-full rounded-l-md sm:w-1/2 flex items-center justify-center bg-green-400 text-white center py-10 sm:py-0'>
       <div className=' rounded'>

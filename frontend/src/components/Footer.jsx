@@ -17,8 +17,15 @@ const Footer=()=> {
     <div className='flex flex-col sm:grid grid-cols-[1fr_1fr_1fr] gap-14 mt-20  text-sm bg-white pl-10 pr-10' >
       
       <div className='col-span-3'>
-      <img  src={assets.logo} className='w-32 inline-flex'/><span><img src={assets.logoName} className='w-80 inline-flex'/></span>
-      <p className='text-gray-700 text-justify w-full'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, eaque nesciunt pariatur magnam quasi illo animi architecto natus explicabo nulla reiciendis excepturi quisquam? Voluptatibus facilis culpa placeat maiores dolorum repellat provident expedita sunt consequatur fugit dolor, voluptatem quos id tempore aliquid sed recusandae impedit nostrum? Ut, repudiandae beatae amet architecto perspiciatis blanditiis ipsam neque dolore quis maiores assumenda enim placeat quae exercitationem ipsum totam vitae animi a adipisci at eos dolorum fugiat. Facere reprehenderit optio dolores quia temporibus placeat iste!</p>
+        <div className="flex items-center justify-center p-4">
+          <img src={assets.logo} className="w-20 h-auto inline-flex" alt="Nitamitra Logo" />
+          <p className="font-extrabold text-4xl sm:text-5xl md:text-6xl ml-2 text-green-400">nitamitra shopping</p>
+        </div>
+          <p className='text-gray-700 text-justify w-full'>**Nitamitra Shopping** is your go-to destination for all things stylish, trendy, and affordable! At Nitamitra, we bring together a curated selection of high-quality fashion, accessories, home essentials, and lifestyle products designed to elevate your everyday experience. Whether you're looking for the latest in fashion, unique decor pieces, or practical gadgets, Nitamitra has something for everyone.  
+
+          Our store focuses on offering a seamless shopping experience with a diverse range of products that cater to all tastes and needs. We believe that shopping should be both fun and convenient, which is why we pride ourselves on exceptional customer service, hassle-free returns, and fast delivery.
+
+          Discover the perfect blend of style and comfort at Nitamitra Shopping — where quality meets affordability! Shop with us today and transform your lifestyle, one product at a time.</p>
       </div>
 
       <div>
@@ -28,7 +35,7 @@ const Footer=()=> {
           <li>About Us</li>
           <li>Delivery</li>
           <li>Careers</li>
-          <li>NitAmit Stories</li>
+          <li>Nitamitra Stories</li>
         </ul>
       </div>
 
@@ -82,7 +89,7 @@ const Footer=()=> {
       </div> 
       <div  className='col-span-3'>
         <hr/>
-        <p className='text-center'>Copyright 2025@ nitamit.com-All Right Reserved.</p>
+        <p className='text-center'>Copyright 2025@ nitamitra.com-All Right Reserved.</p>
       </div>     
     </div>  
     
