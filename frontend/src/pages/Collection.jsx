@@ -186,13 +186,13 @@ const Collection = () => {
 
       {/* Side Bar*/}
 
-      <div className="flex-1 mt-1">
+      <div className="flex-1">
         <div className={`flex items-center justify-between text-sm sm:text lg:text-2xl sticky ${showFilter ? 'top-100' : 'top-28'} sm:top-15 md:top-15 z-1 bg-gray-100 shadow-lg shadow-gray-400 backdrop-blur-lg rounded px-2 py-1 mb-5`}>
           <Title text1={"ALL"} text2={" COLLECTIONS"} />
           {/*Product Sort */}
           <select
             onChange={(e) => setSortType(e.target.value)}
-            className="bg-green-400 shadow-lg text-white shadow-gray-400 backdrop-blur-lg rounded px-2 py-2  font-bold outline-none text-sm "
+            className="bg-green-400 shadow-lg text-white shadow-gray-400  rounded px-2 py-2  font-bold outline-none text-sm "
           >
             <option value="relavent">Sort by:Relavent</option>
             <option value="low-high">Sort by:Low to High</option>
@@ -202,7 +202,7 @@ const Collection = () => {
 
         {/*Map products */}
 
-        <div className="bg-transparent shadow-gray-400 shadow-lg rounded grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6">
+        <div className="bg-transparent shadow-gray-400 shadow-lg rounded grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 py-2">
           {filterProducts.map((item, indext) => (
             <ProductItem
               key={indext}
