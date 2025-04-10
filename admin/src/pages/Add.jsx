@@ -117,19 +117,19 @@ const onSubmitHandler=async(e)=>{
         <div>
           <div className='flex gap-3'>
             <div>
-            <p onClick={()=>setSizes(prev=>prev.includes("S")?prev.filter(item=>item!=="S"):[...prev,"S"])} className={`${sizes.includes("S")?"bg-pink-100":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>S</p>
+            <p onClick={()=>setSizes(prev=>prev.includes("S")?prev.filter(item=>item!=="S"):[...prev,"S"])} className={`${sizes.includes("S")?"bg-green-400 text-white":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>S</p>
             </div>
             <div>
-            <p onClick={()=>setSizes(prev=>prev.includes("M")?prev.filter(item=>item!=="M"):[...prev,"M"])} className={`${sizes.includes("M")?"bg-pink-100":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>M</p>
+            <p onClick={()=>setSizes(prev=>prev.includes("M")?prev.filter(item=>item!=="M"):[...prev,"M"])} className={`${sizes.includes("M")?"bg-green-400 text-white":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>M</p>
             </div>
             <div>
-            <p onClick={()=>setSizes(prev=>prev.includes("L")?prev.filter(item=>item!=="L"):[...prev,"L"])} className={`${sizes.includes("L")?"bg-pink-100":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>L</p>
+            <p onClick={()=>setSizes(prev=>prev.includes("L")?prev.filter(item=>item!=="L"):[...prev,"L"])} className={`${sizes.includes("L")?"bg-green-400 text-white":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>L</p>
             </div>
             <div>
-            <p onClick={()=>setSizes(prev=>prev.includes("XL")?prev.filter(item=>item!=="XL"):[...prev,"XL"])} className={`${sizes.includes("XL")?"bg-pink-100":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>XL</p>
+            <p onClick={()=>setSizes(prev=>prev.includes("XL")?prev.filter(item=>item!=="XL"):[...prev,"XL"])} className={`${sizes.includes("XL")?"bg-green-400 text-white":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>XL</p>
             </div>
             <div>
-            <p onClick={()=>setSizes(prev=>prev.includes("XLL")?prev.filter(item=>item!=="XLL"):[...prev,"XLL"])} className={`${sizes.includes("XLL")?"bg-pink-100":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>XXL</p>
+            <p onClick={()=>setSizes(prev=>prev.includes("XLL")?prev.filter(item=>item!=="XLL"):[...prev,"XLL"])} className={`${sizes.includes("XLL")?"bg-green-400 text-white":"bg-slate-200"} px-3 rounded py-1 cursor-pointer`}>XXL</p>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ const onSubmitHandler=async(e)=>{
         <input onChange={()=>setBestseller(prev=>!prev)} checked={bestseller} type="checkbox" id='bestseller' />
         <label className='cursor-pointer' htmlFor='bestseller'>Add to bestseller</label>
       </div>
-      <button type='submit' className='w-28 px-3 py-2 bg-black my-5 text-white rounded'>Add</button>
+      <button type='submit' className='w-28 px-3 py-2 bg-gray-400 my-5 text-green-400 rounded'>Add</button>
     </form>
   )
 }

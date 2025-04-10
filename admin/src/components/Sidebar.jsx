@@ -6,15 +6,15 @@ const Sidebar=()=> {
   return (
     <div className='w-[18%] min-h-screen border-r-1 '>
       <div className='flex flex-col gap-4 pt-6 text-[15px]'>
-        <NavLink className="flex items-center gap-3 border border-gray-300  border-t-0 px-3 py-2 rounded-l" to="/add">
+        <NavLink className="flex items-center gap-3 border border-green-300  bg-green-200 border-t-0 px-3 py-2 rounded-l" to="/add">
         <img className='w-5 h-5' src={assets.add_icon} alt="" />
         <p className='hidden md:block'>Add Product</p>
         </NavLink>
-        <NavLink className="flex items-center gap-3 border border-gray-300  border-t-0 px-3 py-2 rounded-l" to="/list">
+        <NavLink className="flex items-center gap-3 border border-green-300 bg-green-200  border-t-0 px-3 py-2 rounded-l" to="/list">
         <img className='w-5 h-5' src={assets.order_icon} alt="" />
         <p className='hidden md:block'>List Items</p>
         </NavLink>
-        <NavLink className="flex items-center gap-3 border border-gray-300  border-t-0 px-3 py-2 rounded-l" to="/orders">
+        <NavLink className="flex items-center gap-3 border border-green-300  bg-green-200  border-t-0 px-3 py-2 rounded-l" to="/orders">
         <img className='w-5 h-5' src={assets.order_icon} alt="" />
         <p className='hidden md:block'>Orders</p>
         </NavLink>

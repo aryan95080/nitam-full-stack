@@ -48,7 +48,7 @@ const  List=({token}) =>{
     <p className='my-2'>All Products List</p>
     <div>
       {/*List Table Title */}
-      <div className='hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-3 bg-amber-200 border text-sm'>
+      <div className='hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-3 bg-green-400 text-slate-100 border text-sm'>
         <b>Image</b>
         <b>Name</b>
         <b>Category</b>
