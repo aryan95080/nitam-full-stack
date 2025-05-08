@@ -30,3 +30,5 @@
  🔹 Cloud-based storage for optimized media handling
  🔹 Responsive & user-friendly design for an immersive shopping experience
 📌 Deployed on Vercel for smooth performance and accessibility.
+
+Project live link: https://nitamitra-frontend.vercel.app/
